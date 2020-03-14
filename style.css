@@ -4,3 +4,24 @@
     box-sizing: border-box;
     font-family: 'ABeeZee', sans-serif;
 }
+
+
+
+.portfolio {
+    color: black;
+    background: radial-gradient(rgba(238,6,6), rgba(165,79,79));
+}
+
+nav {
+    min-height: 12vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.logo {
+    font-size: 24;
+}
