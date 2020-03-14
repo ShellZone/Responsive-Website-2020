@@ -8,7 +8,7 @@
 
 
 .portfolio {
-    color: black;
+    color:white;
     background: radial-gradient(rgba(238,6,6), rgba(165,79,79));
 }
 
@@ -53,7 +53,7 @@ nav {
 }
 
 .model-left {
-    transform: translate(0%,-10%);
+    transform: translate(0%, -10%);
 }
 
 .hero:hover model-right {
@@ -72,4 +72,61 @@ nav {
 
 .hero:hover .model-right {
     transform: translate(0%, 0%);
+}
+
+.details h1 {
+    font-size: 15px;
+
+}
+
+.details h2 {
+    font-size: 12px;
+    padding: 20px 0px;
+}
+
+.details p{
+    font-size: 24px;
+    padding: 20px 0 50px 0px;
+}
+
+.pages{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.pages > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages h3 {
+    font-size: 24px;
+    padding: 30px;
+}
+
+.pages svg {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(2);
+}
+
+.pages svg:hover{
+    animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+.pages svg.active {
+    opacity: 1;
+}
+
+@keyframes dot {
+    0% {
+        transform: scale(2);
+        
+    }
+    100% {
+        transform: scale(4);
+    }
 }
