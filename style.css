@@ -25,3 +25,22 @@ nav {
 .logo {
     font-size: 24;
 }
+
+.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero {
+    
+    overflow: hidden;
+    height: 580px;
+    align-self: center;
+    justify-self: center;
+}
+
+.details {
+    grid-column: 2/3;
+    align-self: flex-end;
+}
