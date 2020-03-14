@@ -35,12 +35,41 @@ nav {
 .hero {
     
     overflow: hidden;
-    height: 580px;
+    height: 300px;
     align-self: center;
     justify-self: center;
+    object-fit: cover;
+    
 }
 
 .details {
     grid-column: 2/3;
-    align-self: flex-end;
+    align-self: end;
+    
+}
+
+.model-right {
+    transform: translate(0%, 10%);
+}
+
+.model-left {
+    transform: translate(0%,-10%);
+}
+
+.hero:hover model-right {
+    transform: translate(0%, 0%);
+}
+
+.hero:hover .model-left {
+    transform: translate(0%,0%);
+}
+
+.hero img {
+    height: 500px;
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.hero:hover .model-right {
+    transform: translate(0%, 0%);
 }
